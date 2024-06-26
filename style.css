@@ -16,7 +16,7 @@ nav {
   background-color: #fff;
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000;
 }
 
 ul {
@@ -46,7 +46,6 @@ nav a:hover {
   background-color: #a73121;
   border-radius: 5px;
 }
-
 
 nav a:active {
   font-size: 18px;
@@ -93,24 +92,58 @@ nav a:active {
 }
 
 #about {
-  height: 100vh;
-  width: 100%;
-  display: inline-block;
   background-color: #fff3e2;
+  padding: 50px 0;
 }
 
-.works-content,
-.years-content,
-.goals-content,
 .about-content {
   background-color: white;
-  border-radius: 50px;
-  width: 25%;
+  border-radius: 20px;
+  width: 30%;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 500px;
-  margin-top: 100px;
   color: #a73121;
-  box-shadow: 5px 3px #aaaaaa;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.text-one {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.text-one img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-one p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.text-one:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 
 #goals {
@@ -119,22 +152,153 @@ nav a:active {
   display: inline-block;
 }
 
+.goals-content {
+  background-color: white;
+  border-radius: 20px;
+  width: 40%;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #a73121;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-top: 80px;
+}
+
+.goal-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.goal-box {
+  width: 300px;
+  background-color: #fff5e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.goal-box h2 {
+  color: #a73121;
+}
+
+.goal-box p {
+  color: #555;
+}
+
+.goal-box:hover {
+  transform: translateY(-5px);
+  background-color: #fff;
+}
+
 #years {
+  background-color: #fff3e2;
   height: 100vh;
   width: 100%;
-  display: inline-block;
-  background-color: #fff3e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.years-content {
+  background-color: white;
+  border-radius: 20px;
+  width: 40%;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #a73121;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-top: 70px;
+}
+
+.essay-content {
+  max-width: 800px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  color: #555;
+  line-height: 1.6;
 }
 
 #works {
   height: 100vh;
   width: 100%;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.works-content {
+  background-color: white;
+  border-radius: 20px;
+  width: 40%;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #a73121;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-top: 70px;
+}
+
+.works-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.works-box {
+  width: 300px;
+  height: auto;
+  background-color: #fff5e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.works-text {
+  padding: 20px 0;
+}
+
+.works-text h2 {
+  color: #a73121;
+}
+
+.works-text p {
+  color: #555;
+}
+
+.works-footer {
+  margin-top: 50px;
+}
+
+.works-footer p {
+  color: #a73121;
+  font-size: 1.2rem;
+}
+
+.works-box:hover {
+  transform: translateY(-5px);
+  background-color: #fff;
 }
 
 #footer {
   background-color: #fff3e2;
-  color: #a73121; 
+  color: #a73121;
   text-align: center;
   padding: 20px 0;
   position: relative;
@@ -143,7 +307,7 @@ nav a:active {
 }
 
 .social {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .social a {
@@ -152,6 +316,10 @@ nav a:active {
 }
 
 .social img {
-  width: 30px; 
+  width: 30px;
   height: auto;
+}
+
+.social a:hover {
+  transform: scale(1.2);
 }
